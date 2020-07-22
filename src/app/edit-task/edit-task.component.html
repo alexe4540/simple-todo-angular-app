@@ -1,0 +1,16 @@
+<div class="row valign-wrapper">
+  <div class="col s8">
+    <div class="input-field row">
+      <h4>Edit {{task.desc}}</h4>
+      <input id="task-desc" type="text" class="validate" [(ngModel)]="task.desc">
+    </div>
+    <div class="row">
+      <h5>Card color</h5>
+      <input id="color" type="color" class="validate" [(ngModel)]="task.color">
+    </div>
+  </div>
+  <div class="col s3 center-align">
+    <a class="waves-effect waves-light btn" (click)="save()"><i
+        class="material-icons right">save</i>Save</a>
+  </div>
+</div>
